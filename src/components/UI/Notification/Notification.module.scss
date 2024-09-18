@@ -1,0 +1,56 @@
+@import '@/variables';
+@import '@/template';
+
+.notification {
+  padding: 12px 80px 12px 20px;
+  max-height: 64px;
+  display: flex;
+  @include flex(row, flex-start, center);
+  gap: 32px;
+  border-radius: 10px;
+  box-shadow: -1px 1px 20px 0px $borderBlur;
+  background-color: $colorItem;
+  &:hover {
+    box-shadow: -1px 1px 20px 0px $borderBlurActive;
+  }
+  .animbox {
+    display: flex;
+    @include flex(row, flex-start, center);
+    gap: 12px;
+  }
+  .text {
+    @include font(20px, $colorText, 500);
+    line-height: 24px;
+  }
+  .textBtn {
+    line-height: 24px;
+    @include font(20px, $colorLinkBtn, 400);
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    &:hover {
+      color: $colorLinkBtnHover;
+      cursor: pointer;
+    }
+    &:active {
+      color: $colorLinkBtnActive;
+    }
+  }
+  .animation {
+    .img {
+      transition: all 300ms ease-in;
+    }
+  }
+}
+// .animation {
+//   opacity: 0;
+//   transition: opacity 300ms ease-in;
+
+//   &.animate {
+//     opacity: 1;
+//   }
+
+//   .img {
+//     transition: all 300ms ease-in;
+//   }
+// }

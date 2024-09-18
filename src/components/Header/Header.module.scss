@@ -1,0 +1,82 @@
+@import '@/variables';
+@import '@/template';
+
+.header {
+    min-height: 116px;
+    display: flex;
+    @include flex(row, space-between, center);
+    padding: 12px 100px 0 100px;
+    border-bottom: 0.5px solid $colorLine;
+    .header__box,
+    .header__btns {
+        display: flex;
+        @include flex(row, space-between, center);
+        gap: 40px;
+    }
+    .header__btns {
+        gap: 20px;
+    }
+    .header__logowrap {
+        max-width: 83px;
+        height: auto;
+        .header__logo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .link {
+        @include font(20px, $colorText, 500);
+        line-height: 24px;
+        text-decoration: none;
+    }
+    .header__authorized {
+        padding: 12px 24px;
+        background-color: $colorButtonDark;
+        border: none;
+        border-radius: 10px;
+        @include font(20px, $colorTextLight, 400);
+        &:hover {
+            background-color: $colorButtonDarkHover;
+            transition: background-color 0.3s ease;
+        }
+        &:active {
+            background-color: $colorButtonDarkActive;
+        }
+    }
+}
+
+.createVacancy {
+    & > div:nth-child(2) {
+        transform: translateX(-21.2%);
+    }
+}
+.chat {
+    & > div:nth-child(2) {
+        transform: translateX(3.3%);
+    }
+}
+.filter {
+    & > div:nth-child(2) {
+        transform: translateX(4.15%);
+    }
+}
+.vacancies {
+    border-bottom: none;
+    .header__box {
+        width: 44.5%;
+    }
+    .header__btns {
+        width: 52.25%;
+    }
+}
+.resumes {
+    border-bottom: none;
+    .header__box {
+        width: 44.75%;
+    }
+    .header__btns {
+        width: 52%;
+    }
+}

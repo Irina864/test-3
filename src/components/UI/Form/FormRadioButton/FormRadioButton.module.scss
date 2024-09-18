@@ -1,0 +1,37 @@
+@import '@/template';
+@import '@/variables';
+
+.container {
+    display: flex;
+    @include flex(column, flex-start, flex-start);
+    gap: 12px;
+    .container__title {
+        @include font(16px, $colorText, 400);
+    }
+    .box {
+        display: flex;
+        @include flex(row, flex-start, center);
+        gap: 12px;
+        .label {
+            padding: 12px 24px;
+            border: 0.5px solid $colorButtonBorder;
+            border-radius: 10px;
+            @include font(16px, $colorText, 400);
+            line-height: 19.2px;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $colorButtonLightHover;
+            }
+        }
+
+        .input {
+            display: none;
+
+            &:checked + .label {
+                color: $colorButtonLightActive;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import '@/variables';
+@import '@/template';
+
+.rightBlock {
+   min-height: fit-content;
+   max-width: 736px;
+   background-color: #FFFF;
+}
+.rightBlock__education {
+   width: 736px;
+   height: 196px;
+   margin-bottom: 24px;
+}
+.label__title {
+   font-family: Fira Sans;
+   line-height: 19.2px;
+   text-align: left;
+   font-weight: 500;
+   margin-bottom: 4px;
+}
+.label__title_err {
+   font-family: Fira Sans;
+   font-size: 16px;
+   line-height: 19.2px;
+   text-align: left;
+   font-weight: 500;
+   margin-bottom: 4px;
+   color: $colorTextError;
+}
+.rightBlock__languages{
+   margin-bottom: 32px;
+}
+.rightBlock__buttons {
+   display: flex;
+   justify-content: space-between;
+}

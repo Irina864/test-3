@@ -1,0 +1,13 @@
+@import '@/variables';
+@import '@/template';
+
+.errorbox {
+  display: flex;
+  @include flex(row, flex-start, center);
+  gap: 5px;
+  .errortext {
+    @include font(14px, $colorTextError, 400);
+    line-height: 16.8px;
+    text-align: left;
+  }
+}

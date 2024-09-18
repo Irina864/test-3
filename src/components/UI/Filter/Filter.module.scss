@@ -1,0 +1,92 @@
+@import '@/variables';
+@import '@/template';
+
+.filter {
+  padding: 4.37px 12px;
+  width: 100%;
+  max-width: 438px;
+  height: 48px;
+  display: flex;
+  @include flex(row, space-between, center);
+  border-radius: 14px;
+  box-shadow: -1px 1px 20px 0px $borderBlur;
+  background-color: $colorItem;
+  &:hover {
+    box-shadow: -1px 1px 20px 0px $borderBlurActive;
+  }
+  .filter__box {
+    display: flex;
+    @include flex(row, space-between, center);
+    .filter__item {
+      padding: 0 20px;
+      display: flex;
+      @include flex(row, center, center);
+      height: 32px;
+      border: none;
+      &:nth-child(1) {
+        padding: 0 20px 0 8px;
+        // width: 139px;
+        width: 100%;
+        max-width: 139px;
+      }
+      &:nth-child(2) {
+        border-left: 1px solid $colorLine;
+        border-right: 1px solid $colorLine;
+        // width: 125px;
+        width: 100%;
+        max-width: 125px;
+      }
+      &:nth-child(3) {
+        // width: 105px;
+        width: 100%;
+        max-width: 105px;
+      }
+    }
+    .filter__input {
+      @include font(16px, $colorText, 500);
+      line-height: 19.2px;
+      overflow: hidden;
+      width: 100%;
+      border: none;
+      &:active {
+        border: none;
+      }
+      &:focus {
+        outline: none;
+      }
+      // &:nth-child(1) {
+      //     width: 105px;
+      // }
+      // &:nth-child(2) {
+      //     width: 76px;
+      // }
+      // &:nth-child(3) {
+      //     width: 105px;
+      // }
+    }
+  }
+  .filter__search {
+    padding: 6.66px 7px;
+    background-color: $colorButtonDark;
+    border: none;
+    border-radius: 10px;
+    @include font(20px, $colorTextLight, 400);
+    &:hover {
+      background-color: $colorButtonDarkHover;
+      transition: background-color 0.3s ease;
+    }
+    &:active {
+      background-color: $colorButtonDarkActive;
+    }
+    .filter__img {
+      max-width: 100%;
+      height: auto;
+      max-height: 18.68px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+.active {
+  box-shadow: -1px 1px 20px 0px $borderBlurActive;
+}

@@ -1,0 +1,14 @@
+@import '@/variables';
+@import '@/template';
+
+.nav {
+    display: flex;
+    @include flex(row, flex-start, flex-start);
+    .nav__item {
+        @include font(16px, $colorTextUnactive, 500);
+        line-height: 19.2px;
+    }
+    .page {
+        color: $colorText;
+    }
+}

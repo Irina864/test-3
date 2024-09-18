@@ -1,0 +1,34 @@
+@import '@/variables';
+@import '@/template';
+
+.form__page1 {
+  display: flex;
+  @include flex(column, flex-start, flex-start);
+  gap: 32px;
+  padding-right: 20px;
+
+  .input {
+    width: 100%;
+    display: flex;
+    @include flex(column, flex-start, flex-start);
+    gap: 24px;
+  }
+  .checkbox {
+    width: 100%;
+    display: flex;
+    @include flex(row, flex-start, flex-start);
+    gap: 13%;
+  }
+}
+.errorInput {
+  border-color: $colorInputBorderError !important;
+}
+.inputWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.error {
+  border: none;
+}

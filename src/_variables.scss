@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wix+Madefor+Display:wght@400..800&display=swap");
+
+$font: "Fira Sans", sans-serif;
+// Фон приложения и фон иконок в хедере
+$colorBackground: #f5f6fd;
+$colorBackgroundGrey: rgba(159, 161, 171, 1);
+
+$colorBackgroundForm: #ffffff;
+
+$colorIconBackground: #d7e0f9;
+$colorIconBackgroundActive: #5c75ce;
+
+// в резюме и т.д. цвета боковой панели, так же есть при заполенении форм
+$colorItemActive: #d7e0f9;
+$colorItem: #ffffff;
+$colorItemOnHover: #f4f7ff;
+$colorItemBorder: #5c75ce;
+
+//  цвета заполняющегося столбика в боковой панели
+$colorCircleActive: #5c75ce;
+$colorCircle: #9fa1ab;
+
+//цвета текста
+$colorText: #131315;
+$colorTextUnactive: #7f7f7f;
+$colorTextChangeInfo: #0040e3;
+// на странице резюме при выборе пола
+$colorTextChecked: #4756a1;
+$colorTextError: #d42727;
+$colorTextSuccess: #0ca64a;
+$colorTextLight: #ffffff;
+
+// поля ввода информации
+$colorInput: #f4f7ff;
+$colorInputBorderError: #d42727;
+$colorInputBorderActive: #5c75ce;
+$colorButtonBorder: #5c75ce;
+$colorInputDisabled: #f5f5f5;
+
+//в формах чекбоксы
+$colorCheckboxBorder: #606e80;
+$colorCheckboxBorderHover: #5b6abb;
+$colorCheckboxBorderActive: #5c75ce;
+$colorCheckboxHover: #f4f7ff;
+$colorCheckboxActive: #e7edff;
+$colorCheckboxBorderDisabled: #9fa1ab;
+$colorCheckboxDisabled: #f5f5f5;
+
+$colorMarkHover: #5b6abb;
+$colorMarkActive: #5b6abb;
+$colorMark: #5c75ce;
+
+// кнопки
+$colorButtonDark: #5c75ce;
+$colorButtonDarkHover: #5b6abb;
+$colorButtonDarkActive: #4756a1;
+
+$colorLinkBtn: rgba(0, 64, 227, 1);
+$colorLinkBtnHover: #3366e9;
+$colorLinkBtnActive: rgba(0, 46, 164, 1);
+
+$colorButtonLight: transparent;
+$colorButtonLightHover: #f4f7ff;
+$colorButtonLightActive: #4756a1;
+
+$colorButtonBorder: #5c75ce;
+
+$colorButtonDisabled: #9fa1ab;
+$colorButtonBorderDisabled: #9fa1ab;
+
+// цвет фильтров
+$colorFilter: transparent;
+$colorFilterActive: #d7e0f9;
+$colorFilterBorder: #5c75ce;
+
+$colorFooter: #5c75ce;
+
+// цвет линии, разделяющей данные
+$colorLine: #5c75ce;
+$colorLineFooter: #ffffff;
+
+$colorArrow: #404b5a;
+
+$borderBlur: rgba(92, 117, 206, 0.15);
+$borderBlurActive: rgba(92, 117, 206, 0.3);
+
+// Стрелки для <select>
+$arrowDown: "data:image/svg+xml,<svg height='16px' width='16px' viewBox='0 0 16 16' fill='%23404B5A' xmlns='http://www.w3.org/2000/svg'><path d='M4.12175 6.11769C3.95939 6.27778 3.95942 6.53976 4.12181 6.69982L7.90254 10.4263L7.9007 10.4281L8.48129 11L8.48297 10.9983L8.48465 11L9.06678 10.426L9.0652 10.4244L12.8296 6.71388C12.9914 6.55432 12.9914 6.29316 12.8295 6.13362C12.671 5.97732 12.4162 5.97733 12.2576 6.13364L8.48478 9.85236L4.69564 6.11763C4.53649 5.96077 4.28087 5.96079 4.12175 6.11769Z'/></svg>";
+$arrowUp: "data:image/svg+xml,<svg height='16px' width='16px' viewBox='0 0 16 16' fill='%23404B5A' xmlns='http://www.w3.org/2000/svg'><path d='M12.8782 10.8823C13.0406 10.7222 13.0406 10.4602 12.8782 10.3002L9.09746 6.57375L9.0993 6.57194L8.51871 6L8.51703 6.00166L8.51535 6L7.93322 6.574L7.9348 6.57556L4.17043 10.2861C4.00856 10.4457 4.00857 10.7068 4.17045 10.8664C4.32905 11.0227 4.58376 11.0227 4.74235 10.8664L8.51522 7.14764L12.3044 10.8824C12.4635 11.0392 12.7191 11.0392 12.8782 10.8823Z'/></svg>";

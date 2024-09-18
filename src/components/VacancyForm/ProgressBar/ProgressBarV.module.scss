@@ -1,0 +1,93 @@
+@import '@/template';
+@import '@/variables';
+
+
+.progressBar {
+  position: relative;
+  width: 100%; // Используйте относительную ширину
+  height: 100%; // Используйте относительную высоту
+  display: flex; // Используйте flexbox для контейнера
+  flex-direction: column; // Установите направление flexbox
+}
+
+.progressLine {
+  position: absolute;
+  left: 8px;
+  top: 40px; // Начинаем с верхнего отступа
+  bottom: 50px; // Заканчиваем у нижнего отступа
+  width: 8px; // Используйте фиксированную ширину для линии, если это необходимо
+  background-color: #9FA1AB;
+}
+
+.progressFill {
+  position: absolute;
+  left: 8px;
+  top: 40px; 
+  width: 8px; 
+  background-color: #5C75CE;
+  transition: height 0.3s ease;
+  bottom: 100px; 
+}
+
+.step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 34px;
+}
+
+.stepMarker {
+  width: 24px; 
+  height: 24px;
+  border: 2px solid #9FA1AB;
+  border-radius: 50%;
+  background-color: #9FA1AB;
+  margin-right: 20px;
+  z-index: 1;
+}
+
+.step.completed .stepMarker {
+  background-color: #5C75CE;
+  border-color: #5C75CE;
+}
+
+.step.active .stepMarker {
+  border-color: #5C75CE;
+}
+
+.stepContent {
+  flex-grow: 1;
+  background-color: #FFFFFF; 
+  padding: 25px; 
+  border-radius: 8px;
+}
+
+.stepContent h3 {
+  margin: 0;
+  font-size: 16px; 
+  font-weight: 500;
+}
+
+.stepContent p {
+  margin: 5px 0 0;
+  font-size: 14px; 
+  font-weight: 400;
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step.active .stepContent {
+  background-color: #D7E0F9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.completedText {
+  color: #131315;
+}
+
+.notCompletedText {
+  color: #7F7F7F;
+}
